@@ -33,5 +33,11 @@ module App
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    # Rails app default Timezone
+    config.time_zone = ENV["TZ"]
+    # Save as UTC time on Postgresql
+    config.active_record.default_timezone = :utc
+    # Not adding autoload path to $LOAD_PATH
+    config.add_autoload_paths_to_load_path = false
   end
 end
