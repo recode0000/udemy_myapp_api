@@ -1,5 +1,7 @@
-class Api::V1::HelloController < ApplicationController
-    def index
-        render json: "Hello test by Leo"
-    end
+module Api
+	module V1
+		class HelloController < ApplicationController
+			render json: 'Hello by Leo'
+		end
+	end
 end
