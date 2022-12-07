@@ -38,10 +38,3 @@ apk add --virtual build-dependencies --no-cache ${DEV_PACKAGES} && \
     apk del build-dependencies
 
 COPY . ./
-
-# コンテナ内で実行しないコマンドを定義する
-# -b ... バインド。プロセスを指定したip{0.0.0.0}アドレスに紐付け（バインド）する
-CMD ["rails", "server", "-b", "0.0.0.0"]
-
-#ホスト（PC） | コンテナ
-#ブラウザ（外部） | Rails
