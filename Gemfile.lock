@@ -149,8 +149,6 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.10)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2022.7)
-      tzinfo (>= 1.0.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -171,7 +169,6 @@ DEPENDENCIES
   rails (~> 6.0.6)
   spring
   spring-watcher-listen (~> 2.0.0)
-  tzinfo-data
 
 RUBY VERSION
    ruby 2.7.2p137
