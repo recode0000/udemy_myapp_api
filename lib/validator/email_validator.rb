@@ -11,9 +11,5 @@ class EmailValidator < ActiveModel::EachValidator
     if (value =~ FORMAT_REGEX).nil?
       record.errors.add(attribute, :invalid)
     end
-
-    if record.is_email_active?
-      record.errors.add(attribute, :taken)
-    end
   end
 end

@@ -39,3 +39,5 @@ group :development do
 end
 
 gem 'awesome_print', '~> 1.8'
+gem "devise"
+gem "devise_token_auth"
