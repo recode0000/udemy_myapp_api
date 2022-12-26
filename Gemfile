@@ -29,6 +29,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug', '~> 3.10', '>= 3.10.1'
+  gem 'letter_opener_web', '~> 1.3', '>= 1.3.4'
 end
 
 group :development do

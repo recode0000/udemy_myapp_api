@@ -3,7 +3,7 @@
 FROM ruby:2.7.2-alpine
 
 # Dockerfile内で使用する変数を定義
-#a 実際はappが入る
+# 実際はappが入る
 ARG WORKDIR
 ARG RUNTIME_PACKAGES="nodejs tzdata postgresql-dev postgresql git"
 ARG DEV_PACKAGES="build-base curl-dev"
@@ -30,7 +30,7 @@ RUN apk update && \
     apk upgrade && \
     apk add --no-cache ${RUNTIME_PACKAGES} gcompat && \
     # 名前（任意）= 仮想パッケージ
-apk add --virtual build-dependencies --no-cache ${DEV_PACKAGES} && \
+    apk add --virtual build-dependencies --no-cache ${DEV_PACKAGES} && \
     # bundle install は gemのインストールコマンド
     # -j4(jobs=4) = Gem インストールの高速化
     bundle install -j4 && \
